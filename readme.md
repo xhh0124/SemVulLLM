@@ -15,7 +15,8 @@ In `formSetClientPrio`, the user-controlled parameters `ip` and `mac` are retrie
 - `sprintf(acStack_214, "test1;test1;%s-%s;%s", ip, ip, mac);`
 
 A remote attacker can trigger a stack overflow by supplying overly long `ip` and/or `mac` values.
-
+![Vulnerability Function](./1.png)
+![Vulnerability Function](./2.png)
 ## Attack Vector
 
 Send a crafted HTTP request to the `SetClientPrio` CGI endpoint with `op != 0` and overly long `ip` and/or `mac`
