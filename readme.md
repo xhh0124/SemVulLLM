@@ -1,4 +1,4 @@
-# Tenda FH1203 Vulnerability
+# CVE-2025-69700 Tenda FH1203 Vulnerability
 
 This vulnerability lies in the `SetClientPrio` CGI handler which affects the latest firmware of Tenda FH1203.
 (The latest version is [V2.0.1.6](https://down.tenda.com.cn/uploadfile/FH1203/fh1203_kfw_V2.0.1.6_cn_svn1134.zip))
