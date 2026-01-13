@@ -29,5 +29,5 @@ parameters.
 
 ## Timeline
 
-- 2025-XX-XX: CVE request submitted to MITRE (ticket: XXXXX)
-- 2025-XX-XX: Public disclosure
+- 2025-12-12: CVE request submitted to MITRE
+- 2026-01-13: Public disclosure - CVE-2025-69700
