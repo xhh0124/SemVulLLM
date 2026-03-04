@@ -1,5 +1,6 @@
-# Tenda ask_to_reboot Vulnerability (Stack Overflow)
-This vulnerability lies in the `ask_to_reboot` CGI handler which affects the latest firmware of Tenda US_W3V1.0BR_V1.0.0.3.
+# Tenda W3V1.0BR_V1.0.0.3(2204) Vulnerability (Stack Overflow)
+This vulnerability lies in the `ask_to_reboot` CGI handler which affects the latest firmware of Tenda W3 Wireless Router V1.0.
+(The latest version is V1.0.0.3(2204))
 
 ## Vulnerability Description
 
@@ -32,5 +33,5 @@ A crafted HTTP request to `ask_to_reboot` CGI handler with an excessively long `
 
 ## Timeline
 
-- 2026-3-3: CVE request submitted to MITRE
+- 2026-3-4: CVE request submitted to MITRE
 
