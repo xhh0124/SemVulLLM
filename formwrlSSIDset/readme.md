@@ -1,33 +1,30 @@
 # Tenda W3V1.0BR_V1.0.0.3(2204) Vulnerability (Stack Overflow)
-This vulnerability lies in the `formwrlSSIDset` CGI handler which affects the latest firmware of Tenda W3 Wireless Router V1.0.
+This vulnerability lies in the `formSetCfm` CGI handler which affects the latest firmware of Tenda W3 Wireless Router V1.0.
 (The latest version is V1.0.0.3(2204))
 
 ## Vulnerability Description
 
-There is a **stack-based buffer overflow** vulnerability in function `formwrlSSIDset`, which is reachable via
-the `formwrlSSIDset` handler registered by `websFormDefine("wifiSSIDset",formwrlSSIDset);` in function `formDefineTendDa`.
+There is a **stack-based buffer overflow** vulnerability in function `formSetCfm`, which is reachable via
+the `formSetCfm` handler registered by `websFormDefine((int *)"setcfm",(int)formSetCfm);` in function `formDefineTendDa`.
 
-In `formwrlSSIDset`, the user-controlled parameters `wl_radio` and `index` are retrieved via `websGetVar`:
-- `wl_radio = websGetVar(param_1, "wl_radio", "0");`
-- `index = websGetVar(param_1, "index", "0");`
+In `formSetCfm`, the user-controlled parameters `funcpara1` and `funcpara2` are retrieved via `websGetVar`:
 
-The handler then compares `wl_radio` with "0" and enters the `wl_radio == "0"` branch. Inside this branch, regardless of whether `index` equals "0" or not, the code constructs a configuration key prefix using sprintf:
-- `sprintf(local_110, "wl2g.ssid%s.", index);`
+- `puVar2 = websGetVar(param_1,"funcpara1",&DAT_00481bd4);`
+- `pcVar4 = websGetVar(param_1,"funcpara2",&DAT_00481bd4);`
 
-`index` is fully attacker-controlled and is inserted into the formatted string without any length validation. Since `local_110` is a fixed-size stack buffer, supplying an overly long index value causes `sprintf` to write past the end of `local_110`, resulting in a stack-based buffer overflow.
+In this branch, the function calls `save_list_data`. Inside `save_list_data`, the statement 
+- `sprintf(acStack_154, "%s.listnum", param_1)` 
+uses the tainted parameter `param_1`. Since there is no length check on this parameter before it is passed to sprintf, a `buffer overflow` can occur.
 
-Control-flow reachability is straightforward:The vulnerable `sprintf` is executed when the request reaches the `formwrlSSIDset` CGI handler (registered via `websFormDefine(...)` in `formDefineTendDa`).
+Reachability: As shown in the code above, when the funcname parameter equals `save_list_data`, the program retrieves user-controlled parameters via `websGetVar` and passes them to `save_list_data`. Therefore, an attacker can control the value that eventually reaches the vulnerable `sprintf` call, making the overflow reachable.
+- `sprintf(acStack_154,"%s.listnum",param_1)`
 
-Setting `wl_radio=0` satisfies `strcmp(wl_radio, "0") == 0` and deterministically selects the branch that executes the vulnerable `sprintf`.
-
-The index parameter is consumed directly by `sprintf` in both sub-branches (index == "0" and index != "0"), so no additional constraints are required for reaching the vulnerable call site.
-
-Other parameters retrieved in the same handler (`enableWireless, ssid, broadcastSsid, isolate, maxclients, ssid_encode, etc.`) do not gate the execution of the vulnerable sprintf and are not necessary to reach the overflow condition.
-![Vulnerability Function](./1.png)W
+Other parameters retrieved in the same handler do not gate the execution of the vulnerable sprintf and are not necessary to reach the overflow condition.
+![Vulnerability Function](./1.png)
+![Vulnerability Function](./2.png)
 ## Attack Vector
 
-Send a crafted HTTP request to the `formwrlSSIDset` CGI endpoint with `wl_radio == 0` and overly long `index`
-parameters.
+Send a crafted HTTP request to the `formSetCfm` CGI endpoint with `funcname == save_list_data` and overly long `funcpara1` parameters.
 
 ## Impact
 
@@ -36,4 +33,4 @@ parameters.
 
 ## Timeline
 
-- 2026-3-4: CVE request submitted to MITRE
+- 2026-3-10: CVE request submitted to MITRE
