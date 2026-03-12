@@ -34,4 +34,4 @@ Send a crafted HTTP request to the `R7WebsSecurityHandler` CGI endpoint with `pa
 
 ## Timeline
 
-- 2025-3-10: CVE request submitted to MITRE
+- 2026-3-10: CVE request submitted to MITRE
