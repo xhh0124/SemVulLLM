@@ -6,7 +6,7 @@ This vulnerability lies in the `fromNetToolGet` CGI handler, which affects Tenda
 ## Vulnerability Description
 There is a **stack-based buffer overflow** vulnerability in function `fromNetToolGet`, which is reachable via the `fromNetToolGet` handler registered by `websFormDefine("setPingInfo",(int)fromNetToolGet);` in `formDefineTendDa`.
 
-In `fromNetToolGet`, multiple user-influenced HTTP parameters are retrieved through `websGetVar`, including:
+In `fromNetToolGet`, A user-influenced HTTP parameters are retrieved through `websGetVar`, including:
 - `puVar10 = websGetVar((int)param_1,"domain",&DAT_004a50ac);`
 
 When the request satisfies the traceroute branch condition, the attacker-influenced `domain` parameter is used in the following command:
