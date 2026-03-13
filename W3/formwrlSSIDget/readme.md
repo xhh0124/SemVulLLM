@@ -35,4 +35,4 @@ parameters.
 
 ## Timeline
 
-- 2026-3-4: CVE request submitted to MITRE
+- 2026-3-4: CVE request submitted to MITRE(1506)

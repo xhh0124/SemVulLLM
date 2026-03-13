@@ -21,4 +21,4 @@ Send a crafted HTTP request to the `fromNetToolGet` CGI endpoint with `ip=aaaaaa
 - Denial of Service (process crash or device instability)
 
 ## Timeline
-- 2026-3-12: CVE request submitted to MITRE
+- 2026-3-13: CVE request submitted to MITRE(6786)

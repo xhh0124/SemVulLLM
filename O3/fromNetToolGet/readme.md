@@ -25,4 +25,4 @@ Send a crafted HTTP request to the `fromNetToolGet` CGI endpoint with domain=`te
 - Potentially arbitrary code execution 
 
 ## Timeline
-- 2026-3-12: CVE request submitted to MITRE
+- 2026-3-12: CVE request submitted to MITRE(5953)

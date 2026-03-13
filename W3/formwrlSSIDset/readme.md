@@ -33,4 +33,4 @@ Send a crafted HTTP request to the `formSetCfm` CGI endpoint with `funcname == s
 
 ## Timeline
 
-- 2026-3-10: CVE request submitted to MITRE
+- 2026-3-4: CVE request submitted to MITRE(1499?)
