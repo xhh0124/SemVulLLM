@@ -1,6 +1,6 @@
 # Tenda W3V1.0BR_V1.0.0.3(2204) Vulnerability (Stack Overflow)
 This vulnerability lies in the `formwrlSSIDget` CGI handler which affects the latest firmware of Tenda W3 Wireless Router V1.0.
-(The latest version is V1.0.0.3(2204))
+(The latest version is [V1.0.0.3(2204)](https://www.tenda.com.cn/material/show/2484))
 
 ## Vulnerability Description
 
@@ -22,7 +22,7 @@ Setting `wl_radio=0` satisfies `strcmp(wl_radio, "0") == 0` and deterministicall
 
 The index parameter is consumed directly by `sprintf` in both sub-branches (index == "0" and index != "0"), so no additional constraints are required for reaching the vulnerable call site.
 
-![Vulnerability Function](./1.png)W
+![Vulnerability Function](./1.png)
 ## Attack Vector
 
 Send a crafted HTTP request to the `formwrlSSIDget` CGI endpoint with `wl_radio == 0` and overly long `index` like `1aaa..`

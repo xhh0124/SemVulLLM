@@ -1,6 +1,6 @@
 # Tenda W3V1.0BR_V1.0.0.3(2204) Vulnerability (Stack Overflow)
 This vulnerability lies in the `ask_to_reboot` CGI handler which affects the latest firmware of Tenda W3 Wireless Router V1.0.
-(The latest version is V1.0.0.3(2204))
+(The latest version is [V1.0.0.3(2204)](https://www.tenda.com.cn/material/show/2484))
 
 ## Vulnerability Description
 
