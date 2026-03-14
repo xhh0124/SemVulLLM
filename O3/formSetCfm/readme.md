@@ -1,6 +1,7 @@
-# Tenda W3V1.0BR_V1.0.0.3(2204) Vulnerability (Stack Overflow)
-This vulnerability lies in the `formSetCfm` CGI handler which affects the latest firmware of Tenda W3 Wireless Router V1.0.
-(The latest version is V1.0.0.3(2204))
+# Tenda O3 Vulnerability(Stack-Based Buffer Overflow and Arbitrary code execution)
+
+This vulnerability lies in the `formSetCfm` CGI handler, which affects Tenda O3v3.
+(The latest version is [V1.0.0.5](https://www.tenda.com.cn/product/download/O3v3.html))
 
 ## Vulnerability Description
 
@@ -33,4 +34,4 @@ Send a crafted HTTP request to the `formSetCfm` CGI endpoint with `funcname == s
 
 ## Timeline
 
-- 2026-3-10: CVE request submitted to MITRE(4237)
+- 2026-3-15: CVE request submitted to MITRE(xxxx)

@@ -18,7 +18,7 @@ Reachability:Reachability is plain
 ![Vulnerability Function](./1.png)
 ## Attack Vector
 
-Send a crafted HTTP request to the `fromGstDhcpSetSer` CGI endpoint with `dips=a*188(or more)
+Send a crafted HTTP request to the `fromGstDhcpSetSer` CGI endpoint with `dips=a*188(or more)`
 
 ## Impact
 
