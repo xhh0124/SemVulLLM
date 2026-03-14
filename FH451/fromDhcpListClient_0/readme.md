@@ -1,4 +1,4 @@
-# Tenda fh451 Vulnerability(Stack-Based Buffer Overflow and Arbitrary code execution)
+# Tenda fh451 Vulnerability(Stack-Based Buffer Overflow)
 
 This vulnerability lies in the `fromDhcpListClient` CGI handler, which affects Tenda fh451 V1.0.0.9.
 (The latest version is [V1.0.0.9](https://www.tenda.com.cn/product/help/FH451))
@@ -21,4 +21,4 @@ Send a crafted HTTP request to the `fromDhcpListClient` CGI endpoint with long p
 - Denial of Service (process crash or device instability)
 
 ## Timeline
-- 2026-3-14: CVE request submitted to MITRE(5953)The vulnerability is different from that in same function （CVE-2024-46047）
+- 2026-3-14: CVE request submitted to MITRE(7421)
