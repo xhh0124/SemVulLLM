@@ -23,8 +23,8 @@ Send a crafted HTTP request to the `fromGstDhcpSetSer` CGI endpoint with `dips=a
 ## Impact
 
 - Denial of Service (crash/reboot)
-- Potentially remote                                                                                                                                        code execution
+- Potentially remote code execution
 
 ## Timeline
 
-- 2026-3-10: CVE request submitted to MITRE(4407)
+- 2026-3-10: CVE request submitted to MITRE(7568)
