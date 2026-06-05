@@ -25,3 +25,4 @@ Send a crafted HTTP request to the `formCropAndSetWewifiPic` CGI endpoint with l
 
 ## Timeline
 - 2026-3-19: CVE request submitted to MITRE(10344)
+- 2026-6-6: Public disclosure - CVE-2026-36821

@@ -25,3 +25,4 @@ Send a crafted HTTP request to the `formIPMacBindModify` CGI endpoint with long 
 
 ## Timeline
 - 2026-3-17: CVE request submitted to MITRE(8680)
+- 2026-6-6: Public disclosure - CVE-2026-36797

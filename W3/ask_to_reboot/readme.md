@@ -34,4 +34,5 @@ A crafted HTTP request to `ask_to_reboot` CGI handler with an excessively long `
 ## Timeline
 
 - 2026-3-4: CVE request submitted to MITRE(0716)
+- 2026-6-6: Public disclosure - CVE-2026-36770/36773
 

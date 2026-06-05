@@ -24,3 +24,4 @@ Send a crafted HTTP request to the `formAddWebAuthUser` CGI endpoint with long p
 
 ## Timeline
 - 2026-3-18: CVE request submitted to MITRE(9463)
+- 2026-6-6: Public disclosure - CVE-2026-36807/36808

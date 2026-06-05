@@ -26,3 +26,4 @@ Send a crafted HTTP request to the `formSetNetCheckTools` CGI endpoint with long
 
 ## Timeline
 - 2026-3-18: CVE request submitted to MITRE(9486)
+- 2026-6-6: Public disclosure - CVE-2026-36815

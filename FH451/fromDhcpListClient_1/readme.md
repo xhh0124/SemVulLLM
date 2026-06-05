@@ -25,3 +25,4 @@ Send a crafted HTTP request to the `fromDhcpListClient` CGI endpoint with long p
 
 ## Timeline
 - 2026-3-14: CVE request submitted to MITRE(7425)
+- 2026-6-6: Public disclosure - CVE-2026-36786

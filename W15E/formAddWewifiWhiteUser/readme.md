@@ -24,3 +24,4 @@ Send a crafted HTTP request to the `formAddWewifiWhiteUser` CGI endpoint with lo
 
 ## Timeline
 - 2026-3-18: CVE request submitted to MITRE(9488)
+- 2026-6-6: Public disclosure - CVE-2026-36816

@@ -29,3 +29,4 @@ Send a crafted HTTP request to the `fromNatStaticSetting` CGI endpoint with `pag
 ## Timeline
 
 - 2026-3-10: CVE request submitted to MITRE(7572)
+- 2026-6-6: Public disclosure - CVE-2026-36790

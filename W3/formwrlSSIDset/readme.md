@@ -37,3 +37,4 @@ parameters.
 ## Timeline
 
 - 2026-3-4: CVE request submitted to MITRE(1499)
+- 2026-6-6: Public disclosure - CVE-2026-36771

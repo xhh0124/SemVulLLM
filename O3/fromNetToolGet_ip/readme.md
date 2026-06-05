@@ -22,3 +22,4 @@ Send a crafted HTTP request to the `fromNetToolGet` CGI endpoint with `ip=aaaaaa
 
 ## Timeline
 - 2026-3-13: CVE request submitted to MITRE(6786)
+- 2026-6-6: Public disclosure - CVE-2026-36784

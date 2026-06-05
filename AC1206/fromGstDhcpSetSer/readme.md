@@ -28,3 +28,4 @@ Send a crafted HTTP request to the `fromGstDhcpSetSer` CGI endpoint with `dips=a
 ## Timeline
 
 - 2026-3-10: CVE request submitted to MITRE(7568)
+- 2026-6-6: Public disclosure - CVE-2026-36789

@@ -30,3 +30,4 @@ Send a crafted HTTP request to the `formWifiRadioSet` CGI endpoint with `wl_radi
 ## Timeline
 
 - 2026-3-15: CVE request submitted to MITRE(7577)
+- 2026-6-6: Public disclosure - CVE-2026-36792

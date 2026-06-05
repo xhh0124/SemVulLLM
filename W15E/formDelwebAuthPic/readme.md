@@ -25,3 +25,4 @@ Send a crafted HTTP request to the `formDelwebAuthPic` CGI endpoint with long pa
 
 ## Timeline
 - 2026-3-18: CVE request submitted to MITRE(9479)
+- 2026-6-6: Public disclosure - CVE-2026-36811

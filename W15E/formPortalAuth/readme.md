@@ -25,3 +25,4 @@ Send a crafted HTTP request to the `formPortalAuth` CGI endpoint with long param
 
 ## Timeline
 - 2026-3-18: CVE request submitted to MITRE(9474)
+- 2026-6-6: Public disclosure - CVE-2026-36810

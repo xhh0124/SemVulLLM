@@ -33,3 +33,4 @@ Send a crafted HTTP request to the `fromVirtualSer` CGI endpoint with overly lon
 ## Timeline
 
 - 2026-3-10: CVE request submitted to MITRE(4663)
+- 2026-6-6: Public disclosure - CVE-2026-36779

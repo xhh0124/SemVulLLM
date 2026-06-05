@@ -35,3 +35,4 @@ Send a crafted HTTP request to the `R7WebsSecurityHandler` CGI endpoint with `pa
 ## Timeline
 
 - 2026-3-10: CVE request submitted to MITRE(4407)
+- 2026-6-6: Public disclosure - CVE-2026-36778

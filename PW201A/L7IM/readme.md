@@ -27,3 +27,4 @@ Send a crafted HTTP request to the `0x42d520` CGI endpoint with long parameter s
 
 ## Timeline
 - 2026-3-17: CVE request submitted to MITRE(8928)
+- 2026-6-6: Public disclosure - CVE-2026-36805

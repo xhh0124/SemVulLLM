@@ -28,4 +28,4 @@ A crafted HTTP request to `FUN_00442b44` CGI handler with an excessively long `m
 ## Timeline
 
 - 2026-3-15: CVE request submitted to MITRE(7579)
-
+- 2026-6-6: Public disclosure - CVE-2026-36793
